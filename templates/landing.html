@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Pawfect Snuggles provides luxurious grooming experiences for pets with love and care.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../static/img/Logo.ico">
+    <link rel="stylesheet" href="../static/css/styles.css" />
+    <title>Pawfect Snuggles</title>
+  </head>
+  <body class="landing-body">
+    <header>
+      <img src="../static/img/Logo.png" alt="brand logo" />
+      
+    </header>
+    <main class="hero">
+      <div class="landing-hero-title-wrapper">
+        <h1 class="landing-hero-header">Pawfect Snuggles</h1>
+        <h4 class="landing-hero-sub-header">
+          Groomed with Love, Tail Wags Guaranteed!
+        </h4>
+      </div>
+      <div class="lainding-hero-desc-container">
+        <p>
+          At Pawfect Snuggles, we believe that every pet deserves to feel
+          pampered, loved, and completely at ease. From fluffy pups to curious
+          kitties, we offer a cozy retreat where your furry friends can relax,
+          unwind, and enjoy a luxurious grooming experience.Your pet’s comfort
+          is our top priority, and we can’t wait to welcome them for their next
+          spa day at Pawfect Snuggles!
+        </p>
+      </div>
+      <a class="signIn" href="{{ url_for('login') }}">
+        <p class="bttnTxt">Log In</p>
+        <img src="../static/img/CircleArrow.png" alt="arrow with circle" />
+      </a>
+    </main>
+    <section class="reviews-container">
+      <article class="articles">
+        <h2 class="article-title">Happy Paws, Happy Heart!</h2>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="article-text">
+          "Pawfect Snuggles is a dream come true for our little Daisy! From the
+          moment we walked in, she was treated like royalty. The staff was so
+          gentle, and the grooming was flawless. Daisy left looking fabulous and
+          smelling amazing."
+        </p>
+      </article>
+      <article class="articles">
+        <h2 class="article-title">Fur-tastic Experience!</h2>
+        <p class="star">⭐⭐⭐⭐</p>
+        <p class="article-text">
+            "We brought Max in for his first grooming session, and we couldn’t be happier! The team at Pawfect Snuggles was so patient and kind. Max left with a shiny coat and a wagging tail. We’re definitely coming back!"
+        </p>
+      </article>
+    </section>
+  </body>
+</html>

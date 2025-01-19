@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../static/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../static/img/Logo.ico" />
+    <title>Pawfect Snuggles</title>
+  </head>
+  <body>
+    <header>
+      <img src="../static/img/Logo.png" alt="brand logo" />
+      <nav>
+        <section class="options">
+          <a href="{{url_for('home')}}">SERVICES</a>
+          <a href="{{url_for('about')}}">ABOUT</a>
+          <a href="{{url_for('team')}}">OUR TEAM</a>
+        </section>
+      </nav>
+      <a href="{{url_for('dashboard')}}" class="contactBtn">Costumer Profile</a>
+    </header>
+    <section class="home-title">
+      <h1 class="home-hero-header">Book your next service</h1>
+      <p class="home-hero-sub-header">
+        Make a selection from out Top Tier Services
+      </p>
+    </section>
+    <section class="home-hero">
+      <div class="imageContainer"></div>
+      <section class="selections">
+        <article>
+          <h4 class="selection-title">Pet Grooming:</h4>
+          <p class="selection-description">
+            Groom your pet to perfection, with a full range of services
+            including baths, trims, and styling to keep your pet looking their
+            best.
+          </p>
+        </article>
+
+        <article>
+          <h4 class="selection-title">Pet Spa Services:</h4>
+          <p class="selection-description">
+            Pamper your pet with our luxurious spa treatments. From massages to
+            aromatic baths, your pet will leave feeling relaxed and rejuvenated.
+          </p>
+        </article>
+
+        <article>
+          <h4 class="selection-title">Pet Nail Care:</h4>
+          <p class="selection-description">
+            Ensure your pet’s comfort and well-being with our professional nail
+            trimming services. We offer gentle care for both dogs and cats.
+          </p>
+        </article>
+
+        <article>
+          <h4 class="selection-title">Pet Teeth Cleaning:</h4>
+          <p class="selection-description">
+            Maintain your pet’s oral health with our teeth cleaning services.
+            Prevent dental issues and ensure fresh breath for your furry friend.
+          </p>
+        </article>
+
+        <article>
+          <h4 class="selection-title">Pet Behavioral Training:</h4>
+          <p class="selection-description">
+            Help your pet become the best version of themselves with our expert
+            training sessions, tailored to address behavior concerns and improve
+            overall obedience.
+          </p>
+        </article>
+      </section>
+    </section>
+  </body>
+</html>

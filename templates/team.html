@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../static/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../static/img/Logo.ico" />
+    <title>Pawfect Snuggles</title>
+  </head>
+  <body>
+    <header>
+      <img src="../static/img/Logo.png" alt="brand logo" />
+      <nav>
+        <section class="options">
+          <a href="{{url_for('home')}}">SERVICES</a>
+          <a href="{{url_for('about')}}">ABOUT</a>
+          <a href="{{url_for('team')}}">OUR TEAM</a>
+        </section>
+      </nav>
+      <a href="{{url_for('dashboard')}}" class="contactBtn">Costumer Profile</a>
+    </header>
+    <h2 class="team-title">Our Team</h2>
+    <section class="our-team">
+      <div class="team-container">
+        <article class="team-member">
+          <div class="image-container">
+            <img
+              src="../static/img/member-1.jpg"
+              alt="Sarah Johnson"
+              class="team-photo"
+            />
+          </div>
+          <div class="team-info">
+            <h3>Sarah Johnson</h3>
+            <p><strong>Head Groomer</strong></p>
+            <p>
+              With over 10 years of experience in professional grooming, Sarah
+              combines expertise and love to ensure every pet feels pampered and
+              cared for.
+            </p>
+          </div>
+        </article>
+        <article class="team-member">
+          <div class="team-info">
+            <h3>Gina Smith</h3>
+            <p><strong>Behavioral Specialist</strong></p>
+            <p>
+              Gina has worked with pets for 8 years, specializing in behavioral
+              training to ensure pets are comfortable, relaxed, and stress-free
+              during their visit.
+            </p>
+          </div>
+          <div class="image-container">
+            <img
+              src="../static/img/member-2.jpg"
+              alt="Michael Smith"
+              class="team-photo"
+            />
+          </div>
+        </article>
+        <article class="team-member">
+          <div class="image-container">
+            <img
+              src="../static/img/member-3.jpg"
+              alt="Emily Carter"
+              class="team-photo"
+            />
+          </div>
+          <div class="team-info">
+            <h3>Emily Carter</h3>
+            <p><strong>Spa Expert</strong></p>
+            <p>
+              Emily’s 6 years of experience in pet spa services guarantee your
+              furry friends will leave looking fabulous and feeling rejuvenated.
+            </p>
+          </div>
+        </article>
+        <article class="team-member">
+          <div class="team-info">
+            <h3>Jane Lee</h3>
+            <p><strong>Nail Care Specialist</strong></p>
+            <p>
+              Jane has a knack for handling even the most hesitant pets during
+              nail care. With 5 years of experience, he ensures comfort and
+              precision every time.
+            </p>
+          </div>
+          <div class="image-container">
+            <img
+              src="../static/img/member-4.jpg"
+              alt="James Lee"
+              class="team-photo"
+            />
+          </div>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>

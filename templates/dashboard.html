@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard">
+    <main class="dashboard-body">
+        <a class="back" href="{{url_for('home')}}">
+            <img src="../static/img/back.png" alt="back button">
+        </a>
+        <h3 class="header">Welcome, {{ user.get('given_name', 'Guest') }}!</h3>
+            <img 
+                src="{{ user.get('picture', url_for('static', filename='img/default-profile.png')) }}" 
+                alt="Profile picture of {{ user.get('name', 'Guest') }}" 
+                class="profile-image">
+        <section class="user-info">
+            <h2 class="section-title">User Information</h2>
+            <p class="user-detail"><strong>Full Name:</strong> {{ user.get('name', 'N/A') }}</p>
+            <p class="user-detail"><strong>Email:</strong> {{ user.get('email', 'N/A') }}</p>
+            <p class="user-detail"><strong>Email Verified:</strong> {{ 'Yes' if user.get('email_verified') else 'No' }}</p>
+            <p class="user-detail"><strong>Nickname:</strong> {{ user.get('nickname', 'N/A') }}</p>
+            <p class="user-detail"><strong>Date:</strong> {{ date }}</p>
+            <a href="{{ url_for('logout') }}" class="button">LOGOUT</a>
+
+
+        </section>
+
+        <!-- <section class="raw-data">
+            <h2 class="section-title">Raw User Data</h2>
+            <pre class="raw-data-pre">{{ pretty }}</pre>
+        </section> -->
+    </main>
+</body>
+</html>
